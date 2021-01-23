@@ -1,5 +1,6 @@
 package me.stats.CustomStats;
 
+import com.google.gson.FieldAttributes;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,8 +18,8 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
-		
-    if(command.getName().equalsIgnoreCase("stats")) {
+
+        if(command.getName().equalsIgnoreCase("stats")) {
       player.sendMessage( "If you see this it worked!" );
 	} else {
         sender.sendMessage("This command does not work in console ;-;");
