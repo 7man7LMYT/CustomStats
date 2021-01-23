@@ -26,7 +26,6 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
 
         return false;
     }
-
     @Override
     public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] strings) {
         return new ArrayList<>();
