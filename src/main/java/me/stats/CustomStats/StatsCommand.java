@@ -21,7 +21,7 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
     if(command.getName().equalsIgnoreCase("stats")) {
       player.sendMessage( "If you see this it worked!" );
 	} else {
-        sender.sendMessage("This command does not work in console.");
+        sender.sendMessage("This command does not work in console ;-;");
            }
 
         return false;
