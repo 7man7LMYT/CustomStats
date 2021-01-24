@@ -15,6 +15,7 @@ public class CustomStats extends JavaPlugin {
     public final HashMap<Player, GameMode> gamemodelist = new HashMap<>();
     public final HashMap<Player, Integer> taskidlist = new HashMap<>();
     public void onEnable() {
+        getCommand("stats").setExecutor(new StatsCommand(this));
         console = getLogger();
 
         console.info("Loading configuration...");

@@ -16,16 +16,15 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
         this.customStats = customStats;
     }
 
-    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
-
-        if(command.getName().equalsIgnoreCase("stats")) {
-      player.sendMessage( "If you see this it worked!" );
-	} else {
-        sender.sendMessage("This command does not work in console ;-;");
-           }
-
-        return false;
+        if (sender instanceof Player) {
+            Player p = (Player) sender;
+            p.sendMessage("If you are seeing this, it worked");
+        }
+        else{
+            sender.sendMessage("This command does not work for consoles ;-;");
+        }
+        return  true;
     }
     @Override
     public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] strings) {
