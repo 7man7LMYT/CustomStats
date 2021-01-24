@@ -16,7 +16,6 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
         this.customStats = customStats;
     }
 
-    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
