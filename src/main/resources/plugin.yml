@@ -3,9 +3,15 @@ version: ${project.version}
 main: me.stats.CustomStats.CustomStats
 author: 7man7LMYT
 website: https://store.gamersclub.gq
-description: A plugin that adds /stats.
-api-version: 1.13
+description: An anarchy server oriented plugin that adds /stats.
+api-version: 1.12
 commands:
   stats:
     description: Command to give information about the server.
     aliases: [statistics, serverinfo]
+  stats-reload:
+    description: Reloads the configuration.
+    aliases: [sreload, s-reload]
+permissions:
+  customstats.reload:
+    description: Allows you to reload the configuration.

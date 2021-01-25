@@ -7,13 +7,10 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import java.util.HashMap;
 import java.util.logging.Logger;
 
 public class CustomStats extends JavaPlugin {
     private Logger console;
-    public final HashMap<Player, GameMode> gamemodelist = new HashMap<>();
-    public final HashMap<Player, Integer> taskidlist = new HashMap<>();
     public void onEnable() {
         getCommand("stats").setExecutor(new StatsCommand(this));
         console = getLogger();
