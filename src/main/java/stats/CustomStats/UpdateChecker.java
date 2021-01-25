@@ -1,4 +1,4 @@
-package me.stats.CustomStats;
+package stats.CustomStats;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

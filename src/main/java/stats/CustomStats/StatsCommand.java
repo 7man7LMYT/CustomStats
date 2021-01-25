@@ -1,4 +1,4 @@
-package me.stats.CustomStats;
+package stats.CustomStats;
 
 import com.google.gson.FieldAttributes;
 import org.bukkit.command.Command;
