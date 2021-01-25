@@ -1,15 +1,12 @@
 package me.stats.CustomStats;
 
-import com.google.gson.FieldAttributes;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
-import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.entity.Player;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,11 +25,11 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
             if (args.length == 1){
                 if (args[0].equals("reload")){
                     //checks for permission
-                    if (p.hasPermission("statscommand.reload")){
+                    if (p.hasPermission("customstats.reload")){
                         customStats.reloadConfig();
                         customStats.saveConfig();
                         customStats.getConfig();
-                        p.sendMessage(ChatColor.BLUE+"Stats config reloaded!");
+                        p.sendMessage(ChatColor.BLUE+"Configuration reloaded!");
                     }
                     else{
                         p.sendMessage(ChatColor.RED+"Usage: /stats");
@@ -53,7 +50,7 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
             }
         }
         else{
-            sender.sendMessage("This command does not work for consoles ;-;");
+            sender.sendMessage("This command does not work for console.");
         }
         return true;
     }
