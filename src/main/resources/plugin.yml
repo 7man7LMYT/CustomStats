@@ -2,7 +2,7 @@ name: CustomStats
 version: ${project.version}
 main: me.stats.CustomStats.CustomStats
 author: 7man7LMYT
-website: https://store.gamersclub.gq
+website: https://discord.gg/Z5MyDwp
 description: A plugin that adds /stats.
 api-version: 1.13
 commands:
