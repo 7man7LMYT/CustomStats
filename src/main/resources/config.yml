@@ -1,6 +1,2 @@
-statcommand:
-  - &6-----------------------------------------------
-  - The world was created on January 24, 2021
-  - The world is 12.34 GB in size.
-  - Over 123,456 players have joined since.
-  - &6-----------------------------------------------
+statcommand: '&a-----------------------------------------------------&6This server
+  was created on Jan 25 2020.          &a-----------------------------------------------------'
