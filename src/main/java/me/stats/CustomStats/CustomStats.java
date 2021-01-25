@@ -19,11 +19,11 @@ public class CustomStats extends JavaPlugin {
         console.info("Configuration loaded.");
 		
         console.info("Checking for a newer version.");
-        new UpdateChecker(this, 80763).getVersion(version -> {
+        new UpdateChecker(this, 88300).getVersion(version -> {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
                 console.info("Your up to date!");
             } else {
-                console.info("There is a new update available. Download it at [redacted].");
+                console.info("There is a new update available. Download it at https://www.spigotmc.org/resources/customstats.88300/.");
             }
         });
 
