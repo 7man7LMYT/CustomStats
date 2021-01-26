@@ -1,5 +1,5 @@
 name: CustomStats
-version: ${project.version}
+version: 1.1.0
 main: me.stats.CustomStats.CustomStats
 author: 7man7LMYT
 website: https://discord.gg/Z5MyDwp
