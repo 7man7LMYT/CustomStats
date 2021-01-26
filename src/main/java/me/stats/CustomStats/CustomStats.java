@@ -23,7 +23,7 @@ public class CustomStats extends JavaPlugin {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
                 console.info("Your up to date!");
             } else {
-                console.info("There is a new update available. Download it at https://www.spigotmc.org/resources/customstats.88300/.");
+                console.info("There is a new update available. Download it at https://www.spigotmc.org/resources/customstats.88300/!");
             }
         });
 
