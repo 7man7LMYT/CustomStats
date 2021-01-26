@@ -40,9 +40,11 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
                 p.sendMessage(ChatColor.RED+"Usage: /stats");
             }
             else if (args.length == 0){
-                String statcommand = customStats.getConfig().getString("statcommand");
+                List<String> statcommand = customStats.getConfig().getStringList("statscommand");
                 //color code is &
-                p.sendMessage(ChatColor.translateAlternateColorCodes(('&'), statcommand));
+                for (int i = 0; i<statcommand.size(); i++){
+                    p.sendMessage(ChatColor.translateAlternateColorCodes(('&'), statcommand.get(i)));
+                }
             }
         }
         else{
