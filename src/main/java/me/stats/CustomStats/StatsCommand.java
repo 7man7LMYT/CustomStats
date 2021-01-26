@@ -21,7 +21,6 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            p.sendMessage(customStats.getConfig().getString("statcommand:"));
             if (args.length == 1){
                 if (args[0].equals("reload")){
                     //checks for permission
