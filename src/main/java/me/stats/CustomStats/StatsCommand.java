@@ -45,7 +45,6 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
                 String statcommand = customStats.getConfig().getString("statcommand");
                 //color code is &
                 p.sendMessage(ChatColor.translateAlternateColorCodes(('&'), statcommand));
-                // for some reason it prints empty air? theres nothing making it do this (i kinda like it though)
             }
         }
         else{
