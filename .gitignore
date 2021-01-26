@@ -4,5 +4,4 @@
 *.prefs
 .project
 .classpath
-out/artifacts/CustomStats/CustomStats.jar
-*.jar
+/out/
