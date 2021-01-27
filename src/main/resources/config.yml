@@ -1,7 +1,7 @@
-# Add new lines with the same format
+# The configuration is simple.
 statscommand:
   - '&a-----------------------------------------------------'
-  - '&6This server was created on January 25, 2019.'
-  - '&6The world is 3.37GB in size.'
-  - '&6Over 1,614 players have joined since.'
+  - '&6This server was created on January 26, 2021.'
+  - '&6The world is 12.34GB in size.'
+  - '&6Over 1,234 players have joined since.'
   - '&a-----------------------------------------------------'
