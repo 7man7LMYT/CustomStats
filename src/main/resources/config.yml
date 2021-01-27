@@ -1,5 +1,3 @@
-# The configuration is simple.
-#
 # FORMAT FOR GUI ITEMS:
 # item(1-9):
 #  - (Item type)
@@ -8,16 +6,19 @@
 #
 statscommand:
   - '&a-----------------------------------------------------'
-  - '&6This server was created on January 26, 2021.'
+  - '&6This server was created on January 27, 2021.'
   - '&6The world is 12.34GB in size.'
   - '&6Over 1,234 players have joined since.'
   - '&a-----------------------------------------------------'
 statsgui:
   title:
-    - '&3Stats GUI&0'
+    - '&3Server Stats GUI&0'
   item1:
-    - dirt
-    - '&3Example text'
+    - book
+    - '&6This server was created on January 27, 2021.'
   item2:
-    - air
-    - This is a nonphysical item!
+    - grass_block
+    - '&6The world is 12.34GB in size.'
+  item3:
+    - head
+    - '&6Over 1,234 players have joined since.'
