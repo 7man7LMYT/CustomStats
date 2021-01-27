@@ -20,5 +20,5 @@ statsgui:
     - grass_block
     - '&6The world is 12.34GB in size.'
   item3:
-    - head
+    - player_head
     - '&6Over 1,234 players have joined since.'
