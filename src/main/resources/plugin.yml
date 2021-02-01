@@ -1,5 +1,5 @@
 name: CustomStats
-version: 1.1.0
+version: 1.2.1
 main: me.stats.CustomStats.CustomStats
 author: 7man7LMYT
 website: https://discord.gg/Z5MyDwp
@@ -8,4 +8,4 @@ api-version: 1.13
 commands:
   stats:
     description: Command to give information about the server.
-    aliases: [statistics, serverinfo]
+    aliases: [statistics]
