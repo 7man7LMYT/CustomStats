@@ -1,10 +1,18 @@
 name: CustomStats
-version: 1.2.1
-main: me.stats.CustomStats.CustomStats
+version: 2.0.0
+main: me.gamersclub.customstats.CustomStats
 author: 7man7LMYT
 website: https://discord.gg/Z5MyDwp
 description: An anarchy server oriented plugin that adds /stats.
+
+permissions:
+  customstats.reload:
+    default: op
+softdepend:
+  - floodgate
+  - PlaceholderAPI
 api-version: 1.13
+
 commands:
   stats:
     description: Command to give information about the server.

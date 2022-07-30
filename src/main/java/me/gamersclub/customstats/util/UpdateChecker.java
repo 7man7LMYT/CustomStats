@@ -1,4 +1,4 @@
-package me.stats.CustomStats;
+package me.gamersclub.customstats.util;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class UpdateChecker {
                 consumer.accept(scanner.next());
             }
         } catch (IOException exception) {
-            this.plugin.getLogger().info("Cannot check for updates: " + exception.getMessage());
+            this.plugin.getLogger().warning("Cannot check for updates: " + exception.getMessage());
         }
     }
 }
