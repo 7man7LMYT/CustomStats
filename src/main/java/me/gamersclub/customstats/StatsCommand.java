@@ -97,7 +97,6 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
                             inventory.setItem(i - 1, item);
                         } else {
                             inventory.clear(i - 1);
-                            i++;
                         }
                     }
 
