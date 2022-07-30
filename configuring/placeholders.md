@@ -23,11 +23,11 @@ Here's how the change looks in game, before and after!
 
 ### Before
 
-![Before change](/img/before.png)
+![Before change](/CustomStats/img/before.png)
 
 ### After
 
-![After change](/img/after.png)
+![After change](/CustomStats/img/after.png)
 
 ## Want more placeholders?
 A list of placeholders supported by PlaceholderAPI can be found [here](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders).
