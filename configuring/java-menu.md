@@ -1,10 +1,6 @@
-layout: page
-title: "Customizing the Java Menu"
-permalink: /configuring/customizing-java-menu
-
 # Customizing the menu
 
-*Note: This page only applies to the menu visible to Minecraft: Java Edition clients. For information on how to edit the Minecraft: Bedrock Edition form instead, head over to [this page](https://7man7lmyt.github.io/CustomStats/) instead.*
+*Note: This page only applies to the menu visible to Minecraft: Java Edition clients. For information on how to edit the Minecraft: Bedrock Edition form instead, head over to [this page](https://7man7lmyt.github.io/CustomStats/configuring/bedrock-form) instead.*
 
 
 Example in configuaration:

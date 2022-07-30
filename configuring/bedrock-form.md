@@ -1,10 +1,6 @@
-layout: page
-title: "Customizing the Bedrock Form"
-permalink: /configuring/customizing-bedrock-form
-
 # Customizing the form
 
-*Note: This page applies to the form visible to Minecraft: Bedrock Edition clients. For information on how to edit the Minecraft: Java Edition menu instead, head over to [this page](https://7man7lmyt.github.io/CustomStats/) instead.*
+*Note: This page applies to the form visible to Minecraft: Bedrock Edition clients. For information on how to edit the Minecraft: Java Edition menu instead, head over to [this page](https://7man7lmyt.github.io/CustomStats/configuring/java-form) instead.*
 
 Sample text about the configuration
 ```yaml
