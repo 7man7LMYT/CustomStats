@@ -48,7 +48,7 @@ public class CustomStats extends JavaPlugin {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
                 log.info("You are up to date! (v2.0.0)");
             } else {
-                log.warning("There is a new update available. Download it at https://www.spigotmc.org/resources/88300/!");
+                log.warning("There is a new update available!\n Download it at https://www.spigotmc.org/resources/88300/");
             }
         });
 
