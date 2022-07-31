@@ -7,6 +7,7 @@
 # New with v2.0.0: Placeholders
 
 # The plugin supports PlaceholderAPI placeholders, as well as its own built in ones.
+# Note: Placeholders that require a player will not work in the /stats command.
 # Built in placeholders:
 # %totalplayers% - How many unique players have joined the server
 # %onlineplayers% - How many players are currently online.
@@ -21,26 +22,27 @@ stats:
 
   # Customize the menu sent to Minecraft: Java Edition clients.
   stat-menu:
-    # Format for adding more GUI items:
-    # item(1-54):
+    # Format for adding more items to the GUI:
+    # (0-53):
     #  - (Item type)
     #  - "(display name)"
-    # Max slots are limited to menu-size.
-    # They are not required to be in order. Either set item type to air or don't set an item in the slot to leave blank.
+    #  - "(item lore)"
+    #  - "(more item lore)"
+
+    # Maximum inventory slots are limited by 'menu-size'.
+    # The items are not required to be in order.
+    # Either set the item type to air or remove the slot to leave blank.
+    # Slot #0 is an exception, you have to set it to air if you wish to set nothing in the slot.
 
     # Must be a multiple of 9.
     menu-size: 9
 
     title: "&3Server Stats Menu"
     items:
-      3:
+      0:
         - book
         - "&6This server was created on July 30, 2022."
-      5:
-        - grass_block
         - "&6The world is 12.34GB in size."
-      7:
-        - player_head
         - "&6%totalplayers% unique players have joined since."
 
   # Customize the form sent to Minecraft: Bedrock Edition clients. (Will only work if you have GeyserMC + Floodgate!)

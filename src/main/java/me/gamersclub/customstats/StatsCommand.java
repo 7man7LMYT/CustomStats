@@ -53,6 +53,7 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
             if (args[0].equalsIgnoreCase("reload")) {
                 if (sender.hasPermission("customstats.reload")) {
                     customStats.reloadConfig();
+                    customStats.getConfig();
                     sender.sendMessage(ChatColor.GREEN + "Configuration reloaded!");
                 } else {
                     sender.sendMessage(ChatColor.RED + "Usage: /stats (menu)");
@@ -79,7 +80,7 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
 
                     Inventory inventory = Bukkit.createInventory(player, size, ChatColor.translateAlternateColorCodes('&', title));
 
-                    for (int i = 1; i < size; i++) {
+                    for (int i = 0; i < size; i++) {
                         if (customStats.getConfig().contains("stats.stat-menu.items." + i)) {
                             List<String> statsGui = customStats.getConfig().getStringList("stats.stat-menu.items." + i);
 
@@ -92,11 +93,20 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
 
                                 assert itemMeta != null;
                                 itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
+
+                                if (statsGui.size() > 2) {
+                                    List<String> lore = new ArrayList<>();
+                                    for (int l = 2; l < statsGui.size(); l++) {
+                                        lore.add(ChatColor.translateAlternateColorCodes('&',placeholderManager.placeholderReplacer(player, statsGui.get(l))));
+                                    }
+                                    itemMeta.setLore(lore);
+                                }
+
                                 item.setItemMeta(itemMeta);
                             }
-                            inventory.setItem(i - 1, item);
+                            inventory.setItem(i, item);
                         } else {
-                            inventory.clear(i - 1);
+                            inventory.clear(i);
                         }
                     }
 
