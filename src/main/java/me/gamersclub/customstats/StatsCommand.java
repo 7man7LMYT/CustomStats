@@ -5,10 +5,7 @@ import me.gamersclub.customstats.menus.StatForm;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
-import org.bukkit.command.TabExecutor;
+import org.bukkit.command.*;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -43,12 +40,22 @@ public class StatsCommand implements CommandExecutor, TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String alias, String @NotNull [] args) {
         if (args.length == 0) {
-            List<String> statCommand = customStats.getConfig().getStringList("stats.stat-command");
+            if (sender instanceof ConsoleCommandSender) {
+                List<String> statCommand = customStats.getConfig().getStringList("stats.stat-command");
 
-            //color code is &
-            for (String s : statCommand) {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes(('&'), placeholderManager.placeholderReplacer(null, s)));
+                //color code is &
+                for (String s : statCommand) {
+                    sender.sendMessage(ChatColor.translateAlternateColorCodes(('&'), placeholderManager.placeholderReplacer(null, s)));
+                }
+            } else {
+                List<String> statCommand = customStats.getConfig().getStringList("stats.stat-command");
+
+                //color code is &
+                for (String s : statCommand) {
+                    sender.sendMessage(ChatColor.translateAlternateColorCodes(('&'), placeholderManager.placeholderReplacer((Player) sender, s)));
+                }
             }
+
         } else {
             if (args[0].equalsIgnoreCase("reload")) {
                 if (sender.hasPermission("customstats.reload")) {
