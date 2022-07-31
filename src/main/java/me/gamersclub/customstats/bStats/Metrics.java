@@ -1,4 +1,4 @@
-package me.stats.CustomStats.bStats;
+package me.gamersclub.customstats.bStats;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -29,7 +29,7 @@ import java.util.zip.GZIPOutputStream;
 /**
  * bStats collects some data for plugin authors.
  * <p>
- * Check out https://bStats.org/ to learn more about bStats!
+ * Check out <a href="https://bStats.org/">https://bStats.org/</a> to learn more about bStats!
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class Metrics {

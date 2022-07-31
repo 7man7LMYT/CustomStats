@@ -1,24 +1,62 @@
-# FORMAT FOR GUI ITEMS:
-# item(1-9):
-#  - (Item type)
-#  - '(display name)'
-# Max 9 slots, must be in order. Set item type to air to leave blank.
-#
-statscommand:
-  - '&a-----------------------------------------------------'
-  - '&6This server was created on February 1, 2021.'
-  - '&6The world is 12.34GB in size.'
-  - '&6Over 1,234 players have joined since.'
-  - '&a-----------------------------------------------------'
-statsgui:
-  title:
-    - '&3Server Stats GUI&0'
-  item1:
-    - book
-    - '&6This server was created on February 1, 2021.'
-  item2:
-    - grass_block
-    - '&6The world is 12.34GB in size.'
-  item3:
-    - player_head
-    - '&6Over 1,234 players have joined since.'
+# CustomStats v2.0.0
+# More detailed information on how to edit the configuration can be found on the wiki:
+# https://7man7lmyt.github.io/CustomStats/
+
+
+
+# New with v2.0.0: Placeholders
+
+# The plugin supports PlaceholderAPI placeholders, as well as its own built in ones.
+# Note: Placeholders that require a player will not work in the /stats command.
+# Built in placeholders:
+# %totalplayers% - How many unique players have joined the server
+# %onlineplayers% - How many players are currently online.
+
+stats:
+  stat-command:
+    - "&a-----------------------------------------------------"
+    - "&6This server was created on July 30, 2022."
+    - "&6The world is 12.34GB in size."
+    - "&6%totalplayers% unique players have joined since."
+    - "&a-----------------------------------------------------"
+
+  # Customize the menu sent to Minecraft: Java Edition clients.
+  stat-menu:
+    # Format for adding more items to the GUI:
+    # (0-53):
+    #  - (Item type)
+    #  - "(display name)"
+    #  - "(item lore)"
+    #  - "(more item lore)"
+
+    # Maximum inventory slots are limited by 'menu-size'.
+    # The items are not required to be in order.
+    # Either set the item type to air or remove the slot to leave blank.
+    # Slot #0 is an exception, you have to set it to air if you wish to set nothing in the slot.
+
+    # Must be a multiple of 9.
+    menu-size: 9
+
+    title: "&3Server Stats Menu"
+    items:
+      0:
+        - book
+        - "&6This server was created on July 30, 2022."
+        - "&6The world is 12.34GB in size."
+        - "&6%totalplayers% unique players have joined since."
+
+  # Customize the form sent to Minecraft: Bedrock Edition clients. (Will only work if you have GeyserMC + Floodgate!)
+  stat-form:
+    # Format for adding more lines to the form:
+    # content:
+    #   - "&6This text is gold!"
+    #   - "&lThis text is bold!"
+    #   - "&0R&1a&2i&3n&4b&5o&6w &7C&8o&9l&ao&br&cs&d!&e!&f!
+
+    title: "&3Server Stats Menu"
+    content:
+      - "&a--------------------------------"
+      - "&6This server was created on July 30, 2022."
+      - "&6The world is 12.34GB in size."
+      - "&6%totalplayers% unique players have joined since."
+      - "&a--------------------------------"
