@@ -16,11 +16,11 @@ stat-form:
 
 title: "&3Server Stats Menu"
 content:
-    - "&a--------------------------------"
-    - "&6This server was created on July 30, 2022."
-    - "&6The world is 12.34GB in size."
-    - "&6Over %totalplayers% players have joined since."
-    - "&a--------------------------------"
+  - "&a--------------------------------"
+  - "&6This server was created on July 30, 2022."
+  - "&6The world is 12.34GB in size."
+  - "&6%totalplayers% unique players have joined since."
+  - "&a--------------------------------"
 ```
 
 ## Adding more lines
